@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Chemical Equipment Parameter Visualizer
 
 A hybrid web and desktop application for visualizing, analyzing, and
@@ -366,3 +367,7 @@ For help:
 ------------------------------------------------------------------------
 
 **Built with ❤️ for Internship Screening Project**
+=======
+# chemical-equipment-visualizer
+Hybrid Web + Desktop App for Chemical Equipment Visualization - IIT Bombay Internship Task
+>>>>>>> e8eec220cab7f9c334505038512dde72c32a219a
