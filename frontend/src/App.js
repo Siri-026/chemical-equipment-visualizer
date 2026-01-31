@@ -6,7 +6,9 @@ import './App.css';
 
 ChartJS.register(ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement);
 
-const API_BASE_URL = 'http://localhost:8000/api';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000/api';
+
+
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
