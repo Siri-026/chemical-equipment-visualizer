@@ -10,7 +10,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-your-secret-key-chang
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
 # ALLOWED_HOSTS configuration
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '*.onrender.com', '.vercel.app']
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'chemical-equipment-visualizer-46pf.onrender.com',
+    '.onrender.com',
+    '.vercel.app',
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -110,6 +116,9 @@ CORS_ALLOW_HEADERS = [
     'x-csrftoken',
     'x-requested-with',
 ]
+
+# Trust Render proxy headers
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Security settings for production
 if not DEBUG:
