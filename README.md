@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Chemical Equipment Parameter Visualizer
 
 A hybrid web and desktop application for visualizing, analyzing, and
